@@ -5,7 +5,7 @@
 Devise.setup do |config|
 
   config.jwt do |jwt|
-    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+    jwt.secret = '8104b56432ffd458901c6c3f044c2e95ce790e79a5566c610f676bdab13eb8c9c93aa12790aa1ba91174bcd6d526a7bd3f664435cb1b19a4a39751bd8d1551b3'
     jwt.dispatch_requests = [
       ['POST', %r{^/login$}]
     ]
